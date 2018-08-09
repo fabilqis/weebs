@@ -55,7 +55,7 @@ export default class Navbars extends React.Component {
                 <NavLink tag={Link} className="text-dark" to="/contact">Contact</NavLink>
               </NavItem>
               <NavItem className='navitem'>
-                <NavLink tag={Link} className="text-dark" to="/contact">Login</NavLink>
+                <NavLink tag={Link} className="text-dark" to="/login">Login</NavLink>
               </NavItem>
             </Nav>
           </Collapse>

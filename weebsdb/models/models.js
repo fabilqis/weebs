@@ -3,7 +3,7 @@ const Scheme = mongoose.Schema
 const bcrypt = require("bcrypt")
 
 const WeebsScheme = new Scheme({
-    username:{
+    username :{
         type : String,
         require: true
     },
@@ -27,6 +27,8 @@ const WeebsScheme = new Scheme({
         type : String,
         require : true
     }
+
+
     // radio : {
     //     type : Boolean,
     //     require: true

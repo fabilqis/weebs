@@ -24,20 +24,19 @@ export default class Forms extends React.Component {
         });
     }
     submitHandler(e){
-        e.preventDefault(){
+        e.preventDefault();
             axios
             .post("http://localhost:8080/api/register", this.state)
             .then(result=>{
-                if(result.data.error) {
+                if(result.data.errors) {
                     return this.setState(result.data);
                 }
                 return this.setState({
                     userdata : result.data,
-                    error: null,
+                    errors: null,
                     success: true
                 })
             })
-        }  
     }
 
   render() {
@@ -60,8 +59,8 @@ export default class Forms extends React.Component {
                 name="username" 
                 id="username" 
                 placeholder="what is your username?" />{" "}
-                {this.state.error&& this.state.error.username&& (
-                    <p>{this.state.error.username.msg}</p>
+                {this.state.errors&& this.state.errors.username&& (
+                    <p>{this.state.errors.username.msg}</p>
                 )}
             </Col>
             </FormGroup>
@@ -74,8 +73,8 @@ export default class Forms extends React.Component {
                 id="emailreg"
                 onChange = {this.changeHandler} 
                 placeholder="type your e-mail" />
-                {this.state.error&& this.state.error.email&& 
-                <p>{this.state.error.email.msg}</p>}
+                {this.state.errors&& this.state.errors.email&& 
+                <p>{this.state.errors.email.msg}</p>}
             </Col>
             </FormGroup>
             <FormGroup row>
@@ -87,8 +86,8 @@ export default class Forms extends React.Component {
                 id="passwordreg"
                 onChange={this.changeHandler} 
                 placeholder="suggest a password" />
-                {this.state.error&& this.state.error.password && (
-                    <p>{this.state.error.password.msg}</p>
+                {this.state.errors&& this.state.errors.password && (
+                    <p>{this.state.errors.password.msg}</p>
                 )}
             </Col>
             </FormGroup>
@@ -102,8 +101,8 @@ export default class Forms extends React.Component {
                 id="password_con"
                 onChange={this.changeHandler} 
                 placeholder="re-type your password" />
-                {this.state.error&& this.state.error.password_con && (
-                    <p>{this.state.error.password_con.msg}</p>
+                {this.state.errors&& this.state.errors.password_con && (
+                    <p>{this.state.errors.password_con.msg}</p>
                 )}
             </Col>
             </FormGroup>
@@ -116,8 +115,8 @@ export default class Forms extends React.Component {
                  id="yourwishes" 
                  onChange={this.changeHandler} 
                  />
-                 {this.state.error&& this.state.error.yourwishes && (
-                    <p>{this.state.error.yourwishes.msg}</p>
+                 {this.state.errors&& this.state.errors.yourwishes && (
+                    <p>{this.state.errors.yourwishes.msg}</p>
                 )}
             </Col>
             </FormGroup>
