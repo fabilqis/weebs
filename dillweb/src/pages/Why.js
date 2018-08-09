@@ -1,12 +1,12 @@
 import React from 'react';
-import Mystory from './Mystory';
+import Qdata from '../components/Qdata';
 
 export default class Why extends React.Component{
     render(){
         return(
             <div>
             <div>
-            <Mystory/>
+            <Qdata/>
             </div>
             </div>
         )

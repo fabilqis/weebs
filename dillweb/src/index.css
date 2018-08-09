@@ -72,5 +72,16 @@ margin-left: 15px;
 
 .contform{
   margin-top: 200px;
-  margin-bottom: 200px;
+  margin-bottom: 180px;
+  padding: 55px;
+  background-color: #ffebae ;
 }
+
+.card{
+  margin-top: 80px;
+  margin-bottom: 10px; 
+  text-align: center;
+  background-color: #ffdc73;
+}
+
+

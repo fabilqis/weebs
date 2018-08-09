@@ -2,6 +2,7 @@ import React from 'react';
 import Home from '../pages/Home'
 import Contacts from '../pages/Contacts'
 import Why from '../pages/Why'
+import Login from '../pages/Login'
 
 
 import{ 
@@ -48,14 +49,18 @@ export default class Navbars extends React.Component {
                 <NavLink tag={Link}className="text-dark" to="/">Home</NavLink>
               </NavItem>
               <NavItem className='navitem'>
-                <NavLink tag={Link} className="text-dark" to="/whyme">Why Me?</NavLink>
+                <NavLink tag={Link} className="text-dark" to="/whyme">Stories</NavLink>
               </NavItem>
               <NavItem className='navitem'>
                 <NavLink tag={Link} className="text-dark" to="/contact">Contact</NavLink>
               </NavItem>
+              <NavItem className='navitem'>
+                <NavLink tag={Link} className="text-dark" to="/contact">Login</NavLink>
+              </NavItem>
             </Nav>
           </Collapse>
         </Navbar>
+        <Route path='/login' component={Login}/>
         <Route path='/contact' component={Contacts}/>
         <Route path='/whyme' component={Why}/>
         <Route exact path='/' component={Home}/>
