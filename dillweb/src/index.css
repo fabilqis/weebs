@@ -1,0 +1,76 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+.brand{
+  font-family: 'Rock Salt', cursive;
+  color: white;
+  font-display: bold;
+  font-size: 30px;
+}
+
+.navitem{
+margin-right: 15px;
+margin-left: 15px;
+}
+
+.text-light{
+  font-display: bold;
+
+}
+.text{
+  font-family: 'Satisfy', cursive;
+  color: white;
+  font-display: bold;
+  font-size: 45px;
+}
+
+.mycontainer{
+  background-color:	#ffdc73;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.myrow{
+  margin-top: 25px;
+}
+
+.myimg{
+  float: center;
+}
+
+.myimg1{
+  float: right;
+}
+
+.mymain{
+  text-align: center;
+  font-family: 'Rock Salt', cursive;
+  font-size: 20px;
+  margin-top: 30%;
+}
+
+.footers{
+  background-color:#ffbf00;
+  padding-top: 25px;
+  padding-bottom: 2px; 
+}
+
+.thefooter{
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.billy{
+  text-align: center;
+  margin-top: 8px;
+  font-family: 'Satisfy', cursive;
+  color: white;
+}
+
+.contform{
+  margin-top: 200px;
+  margin-bottom: 200px;
+}
