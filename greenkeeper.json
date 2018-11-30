@@ -1,0 +1,10 @@
+{
+  "groups": {
+    "default": {
+      "packages": [
+        "dillweb/package.json",
+        "weebsdb/package.json"
+      ]
+    }
+  }
+}
